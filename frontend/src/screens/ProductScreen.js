@@ -20,7 +20,9 @@ const ProductScreen = () => {
   let { id } = useParams();
   const dispatch = useDispatch();
 
-  const { product, error, loading } = useSelector((state) => state.product);
+  const productInfo = useSelector((state) => state.product);
+  console.log("productInfo", productInfo);
+  const { product, error, loading } = productInfo;
   // this is going to be fired as soon as home screen loads
   useEffect(() => {
     dispatch(getProduct(id));

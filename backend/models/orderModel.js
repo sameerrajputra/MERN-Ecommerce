@@ -26,6 +26,7 @@ const orderSchema = mongoose.Schema(
       postalCode: { type: String, required: true },
       country: { type: String, required: true },
     },
+    paymentMethod: { type: String },
     paymentResult: {
       id: { type: String },
       status: { type: String },

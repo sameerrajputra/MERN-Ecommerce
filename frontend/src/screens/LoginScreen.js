@@ -14,7 +14,8 @@ const LoginScreen = () => {
   const location = useLocation();
   const query = location.search;
   let params = new URLSearchParams(query);
-  const redirect = params.get("redirect") ? params.get("redirect") : "/";
+  const redirect = params.get("redirect") ? "/" + params.get("redirect") : "/";
+  console.log("redirect", redirect);
 
   const dispatch = useDispatch();
 

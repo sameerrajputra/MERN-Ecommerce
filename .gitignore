@@ -15,6 +15,7 @@ node_modules/
 /frontend/build
 
 /uploads/*
+!uploads/file.txt
 
 # misc
 .DS_Store

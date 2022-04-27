@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Message from "../components/message.js";
+import Message from "../components/Message.js";
 import CheckoutSteps from "../components/CheckoutSteps.js";
 import { createOrder } from "../actions/orderActions.js";
 
@@ -32,7 +32,7 @@ const PlaceOrderScreen = () => {
     if (success) {
       navigate(`/order/${order._id}`);
     }
-  }, [success]);
+  }, [success, navigate, order]);
 
   const dispatch = useDispatch();
   const placeOrderHandler = () => {

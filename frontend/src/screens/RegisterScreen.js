@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Form, Button, Row, Col } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import Message from "../components/message.js";
-import Loader from "../components/loader.js";
+import Message from "../components/Message.js";
+import Loader from "../components/Loader.js";
 import FormContainer from "../components/FormContainer.js";
 import { register } from "../actions/userActions.js";
 
